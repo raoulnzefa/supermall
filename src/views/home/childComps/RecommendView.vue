@@ -11,12 +11,12 @@
 
 <script>
   export default {
-    name: "RecommendVeiw",
-    props:{
-      recommends:{
+    name: "RecommendView",
+    props: {
+      recommends: {
         type: Array,
         default() {
-          return [];
+          return []
         }
       }
     }
@@ -24,22 +24,23 @@
 </script>
 
 <style scoped>
-  .recommend{
+  .recommend {
     display: flex;
+    width: 100%;
     text-align: center;
     font-size: 12px;
 
-    padding: 10px 0 15px;
-    border-bottom: 10px solid #f2f2f2;
+    padding: 10px 0 20px;
+    border-bottom: 10px solid #eee;
   }
 
-  .recommend-item{
+  .recommend-item {
     flex: 1;
   }
 
-  .recommend-item img{
-    width: 68px;
-    height: 68px;
+  .recommend-item img {
+    width: 70px;
+    height: 70px;
     margin-bottom: 10px;
   }
 </style>
